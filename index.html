@@ -486,8 +486,8 @@
 
   .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     align-items: start;
   }
 
@@ -495,7 +495,7 @@
     background: rgba(250,248,244,0.04);
     border: 1px solid rgba(250,248,244,0.1);
     border-radius: 20px;
-    padding: 36px;
+    padding: 28px 24px;
     position: relative;
     transition: border-color 0.3s;
   }
@@ -722,12 +722,10 @@
     <svg width="36" height="36" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <circle cx="100" cy="100" r="97" fill="#C49A3C"/>
       <circle cx="100" cy="100" r="88" fill="none" stroke="#D4AA52" stroke-width="0.75"/>
-      <g transform="translate(0,6)">
-        <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
-          fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
-        <text x="100" y="89" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
-          fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="12">ricorra</text>
-      </g>
+      <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
+        fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
+      <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
+        fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="14" dy="-8">ricorra</text>
     </svg>
     <span class="nav-wordmark">Ricorra</span>
   </a>
@@ -738,8 +736,8 @@
   </ul>
 
   <div class="nav-right">
-    <a class="nav-signin" href="/login">Sign In</a>
-    <a class="btn-nav" href="/login">Get Started</a>
+    <a class="nav-signin" href="https://ricorra.io">Sign In</a>
+    <a class="btn-nav" href="https://ricorra.io">Get Started</a>
   </div>
 
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -755,12 +753,10 @@
     <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <circle cx="100" cy="100" r="97" fill="#C49A3C"/>
       <circle cx="100" cy="100" r="88" fill="none" stroke="#D4AA52" stroke-width="0.75"/>
-      <g transform="translate(0,6)">
-        <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
-          fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
-        <text x="100" y="89" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
-          fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="12">ricorra</text>
-      </g>
+      <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
+        fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
+      <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
+        fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="14" dy="-8">ricorra</text>
     </svg>
   </div>
 
@@ -770,7 +766,7 @@
   <p class="hero-sub">Charge recurring Bitcoin subscriptions without a custodian, exchange, or bank in the middle. Payments go directly to your wallet.</p>
 
   <div class="hero-actions">
-    <a class="btn-primary" href="/login">Get Started — It's Free</a>
+    <a class="btn-primary" href="https://ricorra.io">Get Started — It's Free</a>
     <a class="btn-secondary" href="#how-it-works">See how it works →</a>
   </div>
 
@@ -849,23 +845,23 @@
 <section id="pricing">
   <div class="section-inner">
     <div class="section-eyebrow">Pricing</div>
-    <h2 class="section-title">Start free.<br><em>Grow without friction.</em></h2>
-    <p class="section-sub">No setup fees. No monthly minimums. Pay only when you do.</p>
+    <h2 class="section-title">Flat fees.<br><em>No percentage cuts. Ever.</em></h2>
+    <p class="section-sub">Keep every satoshi your subscribers send. Pay a flat fee for the platform, nothing more.</p>
 
     <div class="pricing-grid">
 
       <div class="pricing-card">
-        <div class="pricing-plan">Free</div>
-        <div class="pricing-price">$0</div>
-        <div class="pricing-period">forever</div>
+        <div class="pricing-plan">Creator</div>
+        <div class="pricing-price">$6</div>
+        <div class="pricing-period">per month</div>
         <ul class="pricing-features">
-          <li>1 subscription plan</li>
+          <li>Unlimited subscription plans</li>
+          <li>Subscriber payment pages</li>
           <li>Magic link sign in</li>
-          <li>Bitcoin wallet address</li>
-          <li>Subscriber payment page</li>
-          <li>2% transaction fee</li>
+          <li>Bitcoin + Lightning</li>
+          <li>No percentage fees — ever</li>
         </ul>
-        <a class="btn-pricing btn-pricing-outline" href="/login">Get Started</a>
+        <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
       </div>
 
       <div class="pricing-card featured">
@@ -874,14 +870,14 @@
         <div class="pricing-price">$12</div>
         <div class="pricing-period">per month</div>
         <ul class="pricing-features">
-          <li>Unlimited subscription plans</li>
-          <li>Magic link sign in</li>
+          <li>Everything in Creator</li>
           <li>Renewal reminder emails</li>
-          <li>Subscriber management</li>
-          <li>1% transaction fee</li>
-          <li>Priority support</li>
+          <li>Grace period automation</li>
+          <li>Subscriber self-serve portal</li>
+          <li>CSV + Koinly export</li>
+          <li>Outbound webhooks</li>
         </ul>
-        <a class="btn-pricing btn-pricing-solid" href="/login">Get Started</a>
+        <a class="btn-pricing btn-pricing-solid" href="https://ricorra.io">Get Started</a>
       </div>
 
       <div class="pricing-card">
@@ -890,12 +886,26 @@
         <div class="pricing-period">per year — save $45</div>
         <ul class="pricing-features">
           <li>Everything in Growth</li>
-          <li>Pay with Bitcoin or USDC</li>
-          <li>0.5% transaction fee</li>
+          <li>Blockchain wallet watching</li>
+          <li>AI weekly digest</li>
           <li>Early access to new features</li>
           <li>Direct founder support</li>
         </ul>
-        <a class="btn-pricing btn-pricing-outline" href="/login">Get Started</a>
+        <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-plan">Professional</div>
+        <div class="pricing-price">$199</div>
+        <div class="pricing-period">per year</div>
+        <ul class="pricing-features">
+          <li>Everything in Annual</li>
+          <li>Priority support</li>
+          <li>Custom onboarding</li>
+          <li>Webhook signature verification</li>
+          <li>First access to Lightning</li>
+        </ul>
+        <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
       </div>
 
     </div>
@@ -909,17 +919,15 @@
       <svg width="64" height="64" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <circle cx="100" cy="100" r="97" fill="#C49A3C"/>
         <circle cx="100" cy="100" r="88" fill="none" stroke="#D4AA52" stroke-width="0.75"/>
-        <g transform="translate(0,6)">
-          <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
-            fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
-          <text x="100" y="89" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
-            fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="12">ricorra</text>
-        </g>
+        <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="141" font-weight="400"
+          fill="#FAF8F4" fill-opacity="0.45" text-anchor="middle" dominant-baseline="central">₿</text>
+        <text x="100" y="100" font-family="Cormorant Garamond,Georgia,serif" font-size="26" font-weight="300"
+          fill="#FAF8F4" text-anchor="middle" dominant-baseline="central" letter-spacing="14" dy="-8">ricorra</text>
       </svg>
     </div>
     <h2 class="cta-title">Bitcoin is self-sovereign.<br>Now your <em>subscriptions</em> are, too.</h2>
     <p class="cta-sub">Join the merchants and creators building recurring revenue on sound money.</p>
-    <a class="btn-primary" href="/login">Start for Free</a>
+    <a class="btn-primary" href="https://ricorra.io">Start for Free</a>
   </div>
 </section>
 
@@ -944,7 +952,7 @@
   // If already logged in, redirect Get Started to dashboard
   const SESSION_KEY = 'ricorra_session_token';
   if (localStorage.getItem(SESSION_KEY)) {
-    document.querySelectorAll('a[href="/login"]').forEach(a => {
+    document.querySelectorAll('a[href="https://ricorra.io"]').forEach(a => {
       a.href = '/dashboard';
     });
   }
