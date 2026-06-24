@@ -486,8 +486,8 @@
 
   .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     align-items: start;
   }
 
@@ -495,7 +495,7 @@
     background: rgba(250,248,244,0.04);
     border: 1px solid rgba(250,248,244,0.1);
     border-radius: 20px;
-    padding: 28px 24px;
+    padding: 36px;
     position: relative;
     transition: border-color 0.3s;
   }
@@ -761,9 +761,8 @@
   </div>
 
   <h1 class="hero-title">Subscriptions,<br><em>self-sovereign.</em></h1>
-  <p class="hero-tagline">Recurring. Self-sovereign.</p>
 
-  <p class="hero-sub">Charge recurring Bitcoin subscriptions without a custodian, exchange, or bank in the middle. Payments go directly to your wallet.</p>
+  <p class="hero-sub">Recurring Bitcoin billing for creators and merchants. Payments go directly to your wallet — no custodian, no exchange, no middleman. Ever.</p>
 
   <div class="hero-actions">
     <a class="btn-primary" href="https://ricorra.io">Get Started — It's Free</a>
@@ -823,19 +822,39 @@
         <p class="feature-body">Payments go directly to your Bitcoin wallet. Ricorra never holds funds, never touches your keys, and never stands between you and your revenue.</p>
       </div>
       <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Bitcoin + Lightning</div>
+        <p class="feature-body">Accept on-chain Bitcoin and Lightning Network payments. Renewal emails include scannable QR codes for both — subscribers pay in seconds.</p>
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">↻</div>
-        <div class="feature-title">Recurring by design</div>
-        <p class="feature-body">Monthly or annual billing intervals. Renewal reminders sent automatically. The name says it all — <em style="font-family:'Cormorant Garamond',serif;">ricorrere</em>, to recur.</p>
+        <div class="feature-title">Fully automated</div>
+        <p class="feature-body">Renewal reminders at 7, 3, 1, and 0 days. Grace periods. Auto-cancellation. Wallet watching confirms payments automatically. Set it and forget it.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✦</div>
-        <div class="feature-title">Magic link sign in</div>
-        <p class="feature-body">No passwords. Merchants sign in with a secure email link. Clean, fast, and impossible to brute-force.</p>
+        <div class="feature-title">No percentage fees</div>
+        <p class="feature-body">Flat monthly fee. Keep every satoshi your subscribers send. No per-transaction cuts, no revenue sharing, no surprises.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">⚡</div>
-        <div class="feature-title">Lightning ready</div>
-        <p class="feature-body">On-chain Bitcoin today. Lightning Network support coming soon — for fast, low-fee payments that settle in seconds.</p>
+        <div class="feature-icon">🎁</div>
+        <div class="feature-title">Free trials</div>
+        <p class="feature-body">Offer 7, 14, or 30-day free trials on any plan. Optional upfront payment to filter tire-kickers. Converts subscribers before they commit.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <div class="feature-title">Email list sync</div>
+        <p class="feature-body">Automatically add subscribers to Kit, Beehiiv, or Mailchimp when they pay. Remove them when they cancel. Native integrations, no Zapier needed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏸</div>
+        <div class="feature-title">Subscriber self-service</div>
+        <p class="feature-body">Subscribers manage their own subscriptions — pause for 1–3 months, download receipts, reactivate — without emailing you. A portal built for retention.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <div class="feature-title">Multi-currency display</div>
+        <p class="feature-body">Payment pages automatically show prices in the subscriber's local currency — GBP, EUR, JPY, and 30+ more. USD stays the billing currency.</p>
       </div>
     </div>
   </div>
@@ -845,21 +864,21 @@
 <section id="pricing">
   <div class="section-inner">
     <div class="section-eyebrow">Pricing</div>
-    <h2 class="section-title">Flat fees.<br><em>No percentage cuts. Ever.</em></h2>
-    <p class="section-sub">Keep every satoshi your subscribers send. Pay a flat fee for the platform, nothing more.</p>
+    <h2 class="section-title">Start free.<br><em>Grow without friction.</em></h2>
+    <p class="section-sub">No setup fees. No monthly minimums. Pay only when you do.</p>
 
     <div class="pricing-grid">
 
       <div class="pricing-card">
-        <div class="pricing-plan">Creator</div>
-        <div class="pricing-price">$6</div>
-        <div class="pricing-period">per month</div>
+        <div class="pricing-plan">Free</div>
+        <div class="pricing-price">$0</div>
+        <div class="pricing-period">forever</div>
         <ul class="pricing-features">
-          <li>Unlimited subscription plans</li>
-          <li>Subscriber payment pages</li>
+          <li>1 subscription plan</li>
           <li>Magic link sign in</li>
-          <li>Bitcoin + Lightning</li>
-          <li>No percentage fees — ever</li>
+          <li>Bitcoin wallet address</li>
+          <li>Subscriber payment page</li>
+          <li>2% transaction fee</li>
         </ul>
         <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
       </div>
@@ -870,12 +889,12 @@
         <div class="pricing-price">$12</div>
         <div class="pricing-period">per month</div>
         <ul class="pricing-features">
-          <li>Everything in Creator</li>
+          <li>Unlimited subscription plans</li>
+          <li>Magic link sign in</li>
           <li>Renewal reminder emails</li>
-          <li>Grace period automation</li>
-          <li>Subscriber self-serve portal</li>
-          <li>CSV + Koinly export</li>
-          <li>Outbound webhooks</li>
+          <li>Subscriber management</li>
+          <li>1% transaction fee</li>
+          <li>Priority support</li>
         </ul>
         <a class="btn-pricing btn-pricing-solid" href="https://ricorra.io">Get Started</a>
       </div>
@@ -886,24 +905,10 @@
         <div class="pricing-period">per year — save $45</div>
         <ul class="pricing-features">
           <li>Everything in Growth</li>
-          <li>Blockchain wallet watching</li>
-          <li>AI weekly digest</li>
+          <li>Pay with Bitcoin or USDC</li>
+          <li>0.5% transaction fee</li>
           <li>Early access to new features</li>
           <li>Direct founder support</li>
-        </ul>
-        <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
-      </div>
-
-      <div class="pricing-card">
-        <div class="pricing-plan">Professional</div>
-        <div class="pricing-price">$199</div>
-        <div class="pricing-period">per year</div>
-        <ul class="pricing-features">
-          <li>Everything in Annual</li>
-          <li>Priority support</li>
-          <li>Custom onboarding</li>
-          <li>Webhook signature verification</li>
-          <li>First access to Lightning</li>
         </ul>
         <a class="btn-pricing btn-pricing-outline" href="https://ricorra.io">Get Started</a>
       </div>
